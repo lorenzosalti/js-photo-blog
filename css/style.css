@@ -1,3 +1,35 @@
-body {
-  background-color: bisque;
+/*** RESET ***/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+
+/*** GLOBAL ***/
+body {
+  font-family: "Edu TAS Beginner", cursive;
+  font-optical-sizing: auto;
+
+  background-color: darkkhaki;
+}
+
+
+
+
+/*** HEADER ***/
+
+header {
+  background-image: url(../img/wall.png);
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+
+
+
+
+
+/*** MAIN ***/
