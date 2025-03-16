@@ -32,9 +32,9 @@ axios.get(picsEndpoint)
     gridContainerElement.innerHTML += `
     <div class="card-body">
         <div class="image">
-          <img src="https://marcolanci.it/boolean/assets/pictures/1.png" alt="skate park">
+          <img src="${url}" alt="${title}">
         </div>
-        <h5>Image title</h5>
+        <h5>${title}</h5>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus facilis nostrum tempore cupiditate eveniet
           cumque.</p>
 
