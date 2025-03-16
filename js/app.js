@@ -13,3 +13,28 @@
       </div> */
 
 
+const gridContainerElement = document.getElementById('grid');
+
+const picsEndpoint = 'https://lanciweb.github.io/demo/api/pictures/';
+
+
+axios.get(picsEndpoint)
+  .then(picsArray => {
+
+    console.log(picsArray);
+
+    const obj = picsArray.data[0];
+
+    console.log(obj);
+
+    const { id, title, date, url } = obj;
+
+    console.log(id);
+    console.log(title);
+    console.log(date);
+    console.log(url);
+  })
+
+
+
+
