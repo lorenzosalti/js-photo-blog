@@ -23,11 +23,21 @@ axios.get(picsEndpoint)
 
     console.log(picsArray);
 
-    const obj = picsArray.data[0];
+    generateHTML(picsArray);
 
-    console.log(obj);
+  })
 
-    const { id, title, date, url } = obj;
+
+
+
+function generateHTML(objArray) {
+
+  const obj = objArray.data;
+  console.log(obj);
+
+  obj.forEach((element) => {
+
+    const { title, url } = element;
 
     gridContainerElement.innerHTML += `
     <div class="card-body">
@@ -37,17 +47,13 @@ axios.get(picsEndpoint)
         <h5>${title}</h5>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus facilis nostrum tempore cupiditate eveniet
           cumque.</p>
-
+  
         <img src="./img/pin.svg" alt="pin" class="pin">
-
+  
       </div>`;
-
-    console.log(id);
-    console.log(title);
-    console.log(date);
-    console.log(url);
   })
 
+}
 
 
 
