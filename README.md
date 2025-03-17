@@ -2,15 +2,17 @@
 
 ---
 
-## Giorno 1
-
-### Descrizione
+## Descrizione
 
 Riprodurre un blog fotografico su base del layout dell'immagine qui sotto. \
 Gli elementi del blog devono essere generati dinamicamente attraverso la chiamata ad un' API. \
 Il lavoro del primo giorno prevede tre milestone da raggiungere.
 
 ![desktop](./screenshots/screenshot.png)
+
+---
+
+## Giorno 1
 
 ### Milestone 1
 
@@ -34,3 +36,25 @@ Usare le immagini seguenti come esempio di layout per tablet e mobile.
 ![moblie](./screenshots/mobile.png)
 
 ![tablet](./screenshots/tablet.png)
+
+---
+
+## Giorno 2
+
+### Milestone 1
+
+Fare in modo di creare un overlay che copra l’intera pagina e all’interno, centrata, disporre un’immagine qualunque ed un button di chiusura.
+
+### Milestone 2
+
+Far sparire l’overlay con l’aiuto di una classe CSS che imposti il "display: none" .
+Dopodiché far sì che cliccando una qualunque foto. L’overlay ricompaia.
+Cliccando invece il button di chiusura, l’overlay scompare nuovamente.
+
+### Milestone 3
+
+Inserire il pezzo di logica finale: quando una foto viene cliccata, dove essere proprio quella foto a essere mostrata all’interno dell’overlay.
+
+### Bonus
+
+Spostandosi col mouse sopra le foto, queste si zoommano, ruotano di 10 gradi e la loro ombra aumenta, il tutto in manierà fluida. Inoltre il mouse diventa un puntatore, per far capire all’utente che può cliccare.
