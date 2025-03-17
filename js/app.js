@@ -20,6 +20,10 @@
 // cards container
 const gridContainerElement = document.getElementById('grid');
 
+// overlay elements
+const overlayElement = document.querySelector('.overlay');
+const olCloseElement = document.querySelector('.close-btn');
+
 // API endpoint url
 const picsEndpoint = 'https://lanciweb.github.io/demo/api/pictures/';
 
@@ -30,11 +34,28 @@ axios.get(picsEndpoint)
 
     generateHTML(picsArray);
 
+    // array containing every card
+    const cardsElements = document.querySelectorAll('.card-body');
+
+    // console.log(cardsElements);
+
+    // iteration adding a click event on every card
+    cardsElements.forEach((element) => {
+      element.addEventListener('click', function () {
+        overlayElement.classList.add('active');
+      })
+    })
+
   })
   .catch(function (error) {
     const status = error.status;
     console.log(`Error ${status}`);
   });
+
+
+olCloseElement.addEventListener('click', function () {
+  overlayElement.classList.remove('active');
+})
 
 
 
