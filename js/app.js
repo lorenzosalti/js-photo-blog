@@ -30,6 +30,10 @@ axios.get(picsEndpoint)
 
     generateHTML(picsArray);
 
+  })
+  .catch(function (error) {
+    const status = error.status;
+    console.log(`Error ${status}`);
   });
 
 
