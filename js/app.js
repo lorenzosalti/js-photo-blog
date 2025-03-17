@@ -37,14 +37,12 @@ axios.get(picsEndpoint)
     // array containing every card
     const cardsElements = document.querySelectorAll('.card-body');
 
-    // console.log(cardsElements);
-
     // iteration adding a click event on every card
     cardsElements.forEach((element) => {
       element.addEventListener('click', function () {
         overlayElement.classList.add('active');
-      })
-    })
+      });
+    });
 
   })
   .catch(function (error) {
@@ -52,10 +50,13 @@ axios.get(picsEndpoint)
     console.log(`Error ${status}`);
   });
 
-
+// click event on close button
 olCloseElement.addEventListener('click', function () {
   overlayElement.classList.remove('active');
-})
+});
+
+
+
 
 
 
@@ -82,7 +83,4 @@ function generateHTML(objArray) {
     </div>`;
   });
 
-}
-
-
-
+};
