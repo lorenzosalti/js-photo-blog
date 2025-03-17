@@ -63,6 +63,13 @@ main {
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 30%);
 }
 
+.card-body:hover {
+  z-index: 1;
+  transform: scale(1.1) rotate(10deg);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 30%);
+  transition: all 1s;
+}
+
 .card-image {
   max-width: 600px;
   max-height: 600px;
@@ -96,6 +103,10 @@ main {
   top: -8px;
   left: 50%;
   translate: -50% 0;
+}
+
+.card-body:hover .pin {
+  display: none;
 }
 
 
