@@ -42,7 +42,7 @@ main {
 
 .container {
   margin: 0 auto;
-  max-width: 1946px;
+  max-width: calc((300px * 3) + 50px);
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
@@ -58,8 +58,6 @@ main {
 }
 
 .image {
-  max-height: 600px;
-  max-width: 600px;
   margin-bottom: 10px;
 }
 
@@ -86,10 +84,10 @@ main {
 
 /*** MEDIA QUERIES ***/
 
-@media (max-width: 1986px) {
+@media (max-width: calc((300px * 3) + 50px + 40px)) {
 
   .container {
-    max-width: 1289px;
+    max-width: calc((300px * 2) + 25px);
   }
 
   .card-body {
@@ -97,10 +95,10 @@ main {
   }
 }
 
-@media (max-width: 1329px) {
+@media (max-width: calc((300px * 2) + 25px + 40px)) {
 
   .container {
-    max-width: 632px;
+    max-width: 300px;
   }
 
   .card-body {
