@@ -17,6 +17,14 @@ body {
   position: relative;
 }
 
+.scroll {
+  overflow: auto;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
 .clickable:hover {
   cursor: pointer;
 }

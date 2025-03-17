@@ -37,6 +37,8 @@ axios.get(picsEndpoint)
       // click event on the card
       element.addEventListener('click', function () {
         overlayElement.classList.add('active');
+        document.body.classList.remove('scroll');
+        document.body.classList.add('no-scroll');
 
         // gets the current image by ID
         const currentImageElement = document.getElementById(imageID);
@@ -59,6 +61,8 @@ axios.get(picsEndpoint)
 // click event on close button
 olCloseElement.addEventListener('click', function () {
   overlayElement.classList.remove('active');
+  document.body.classList.add('scroll');
+  document.body.classList.remove('no-scroll');
 });
 
 
