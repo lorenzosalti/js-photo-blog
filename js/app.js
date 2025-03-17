@@ -78,7 +78,7 @@ function generateHTML(objArray) {
     const { id, title, date, url } = element;
 
     gridContainerElement.innerHTML += `
-    <div class="card-body">
+    <div class="card-body clickable">
       <div class="card-image" id="${id}">
         <img src="${url}" alt="${title}">
       </div>

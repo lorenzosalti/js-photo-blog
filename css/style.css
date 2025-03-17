@@ -17,6 +17,10 @@ body {
   position: relative;
 }
 
+.clickable:hover {
+  cursor: pointer;
+}
+
 
 
 /*** HEADER ***/
