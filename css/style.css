@@ -79,6 +79,9 @@ main {
 }
 
 .card-image {
+
+
+
   max-width: 600px;
   max-height: 600px;
   margin: 0 auto;
@@ -168,4 +171,13 @@ main {
   .card-body {
     max-width: 100%
   }
+}
+
+@media (max-height: 720px) {
+
+  .overlay .card-image {
+    height: 80vh;
+    width: 80vh;
+  }
+
 }
