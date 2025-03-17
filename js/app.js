@@ -42,17 +42,15 @@ function generateHTML(objArray) {
   // iteration on data array
   obj.forEach((element) => {
 
-    const { title, url } = element;
+    const { title, date, url } = element;
 
     gridContainerElement.innerHTML += `
     <div class="card-body">
       <div class="image">
         <img src="${url}" alt="${title}">
       </div>
+      <h6>${date}</h6>
       <h5>${title}</h5>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus facilis nostrum tempore cupiditate eveniet
-        cumque.
-      </p>
   
       <img src="./img/pin.svg" alt="pin" class="pin">
   

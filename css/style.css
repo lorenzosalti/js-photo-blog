@@ -68,9 +68,18 @@ main {
   object-fit: cover;
 }
 
+.card-body h6 {
+  font-family: "Sometype Mono", monospace;
+  font-optical-sizing: auto;
+  font-size: 18px;
+  color: #777777;
+  margin-bottom: 10px;
+}
+
 .card-body h5 {
   font-size: 24px;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .pin {
