@@ -46,7 +46,7 @@ function generateHTML(objArray) {
 
     gridContainerElement.innerHTML += `
     <div class="card-body">
-      <div class="image">
+      <div class="card-image">
         <img src="${url}" alt="${title}">
       </div>
       <h6>${date}</h6>
